@@ -512,7 +512,7 @@ h2::after {
             }
         }
 /* Dropdown container */
-.color-picker-dropdown {
+.color-picker-dropdown{
     position: relative;
     display: inline-block;
 }
@@ -602,3 +602,36 @@ h2::after {
 .dropdown-content button:hover {
     background-color: var(--hover-color);
 }
+
+
+.font-style-picker-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.font-style-picker-dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#font-style-picker-btn {
+    background-color: #ff6666; /* Match the main accent color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#font-style-picker-btn:hover{
+    background-color: #953553; /* Darker coral for hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+

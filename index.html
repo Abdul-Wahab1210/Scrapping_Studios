@@ -33,7 +33,7 @@
                 <li><a href="pages/announcements.html">Announcements</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
                 <li class="color-picker-dropdown">
-                    <button id="color-picker-btn">
+                    <button id="color-picker-btn" class="">
                         🎨 <!-- Color picker icon -->
                     </button>
                     <!-- Dropdown Content -->
@@ -46,8 +46,37 @@
                         <input type="color" id="footer-color">
                         <button onclick="applyColors()">Apply</button>
                         <button onclick="resetColors()">Reset</button>
+                    </div>                    
+                </li>
+                <li class="font-style-picker-dropdown">
+                    <button id="font-style-picker-btn">🖋️</button>
+                    <div id="font-style-dropdown" class="dropdown-content">
+                        <label for="font-style">Font Style:</label>
+                        <select id="font-style">
+                            <option value="normal">Normal</option>
+                            <option value="italic">Italic</option>
+                            <option value="bold">Bold</option>
+                        </select>
+                
+                        <label for="font-color">Font Color:</label>
+                        <input type="color" id="font-color" />
+
+                        <br>
+                        <label for="section-select">Apply to: </label>
+                        <select id="section-select">
+                            <option value="header">Header</option>
+                            <option value=".hero">Hero</option>
+                            <option value="#features">Features</option>
+                            <option value=".testimonials">Testimonials</option>
+                            <option value="footer">Footer</option>
+                        </select>
+                        
+                        <br>
+                        <button onclick="applyTextStyle()">Apply</button>
+                        <button onclick="resetTextStyle()">Reset</button>
                     </div>
                 </li>
+                   
             </ul>
         </nav>
     </header>
